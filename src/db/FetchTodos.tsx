@@ -1,7 +1,7 @@
 "use client";
 import Loading from "@/components/Loading";
 import TodosTable from "@/components/TodosTable";
-import { TodosProps } from "@/lib/types";
+import { TodosProps } from "@/types/types";
 import React, { useEffect, useState } from "react";
 
 const FetchTodos = () => {

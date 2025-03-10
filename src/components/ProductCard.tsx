@@ -1,4 +1,4 @@
-import { ProductsProps } from "@/lib/types";
+import { ProductsProps } from "@/types/types";
 import Image from "next/image";
 import React from "react";
 

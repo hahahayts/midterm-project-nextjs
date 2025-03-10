@@ -1,5 +1,5 @@
 import ProductCard from "@/components/ProductCard";
-import { ProductsProps } from "@/lib/types";
+import { ProductsProps } from "@/types/types";
 import React from "react";
 
 const ProductsPage = async () => {

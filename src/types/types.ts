@@ -1,4 +1,4 @@
-export interface ProductsProps {
+export type ProductsProps = {
   id: number;
   title: string;
   description: string;
@@ -7,11 +7,11 @@ export interface ProductsProps {
   stock: number;
   brand: string;
   images: string;
-}
+};
 
-export interface TodosProps {
+export type TodosProps = {
   id: number;
   todo: string;
   completed: boolean;
   userId: number;
-}
+};

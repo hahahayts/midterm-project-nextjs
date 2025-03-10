@@ -1,6 +1,6 @@
 "use client";
 
-import { TodosProps } from "@/lib/types";
+import { TodosProps } from "@/types/types";
 import React from "react";
 
 const TodosTable = ({ todos }: { todos: TodosProps[] }) => {
