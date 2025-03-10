@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #121d2b;
+  --foreground: #b0b8c5;
 }
 
 @theme inline {
@@ -18,9 +18,32 @@
     --foreground: #ededed;
   }
 }
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  th {
+    @apply py-3 bg-[#1F2933] text-lg font-semibold text-left;
+  }
+
+  tr {
+    @apply transform transition-all ease-in-out hover:bg-[#1F2933]/50 duration-75 cursor-pointer;
+  }
+
+  td {
+    @apply py-2 px-2;
+  }
+}
+
+@layer utilities {
+  .link {
+    @apply transform transition-colors hover:text-[#4682B4] duration-75;
+  }
+
+  .card-loading {
+    @apply w-[300px] h-[400px] bg-[#1F2933] animate-pulse rounded-lg;
+  }
 }
