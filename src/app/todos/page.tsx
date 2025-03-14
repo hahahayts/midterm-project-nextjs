@@ -1,4 +1,4 @@
-import FetchTodos from "@/db/FetchTodos";
+import FetchTodos from "@/components/FetchTodos";
 import React from "react";
 
 const page = () => {
